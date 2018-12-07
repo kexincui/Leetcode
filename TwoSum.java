@@ -21,8 +21,8 @@ class TwoSum {
 	}
 
 	public int[] twoSum(int[] nums, int target) {
-		if (nums==null || nums.length<2) {
-        	return new int[]{0,0};
+		if (nums == null || nums.length < 2) {
+			return new int[]{0,0};
 		}
 
 		Map<Integer, Integer> map = new HashMap<>();
