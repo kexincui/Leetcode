@@ -1,3 +1,5 @@
+/**Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.*/
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Arrays;
@@ -44,3 +46,6 @@ class ValidParentheses {
 		System.out.print(res);
 	}
 }
+
+//Time: O(n) traverse the given string one character at a time and push & pop on a stack take O(1).
+//Space: O(n) push all opening brackets onto the stack and in the worst case, we will end up pushing all the brackets onto the stack. e.g. ((((((((((.
