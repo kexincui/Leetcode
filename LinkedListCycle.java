@@ -48,3 +48,9 @@ public class LinkedListCycle {
 		System.out.println(res);
 	}
 }
+
+// Two pointers method
+// Time: O(n), n is the total number of nodes in the linked list.
+	// Consider two cases separately: (1) List has no cycle; (2) List has a cycle
+	
+// Space: O(1) only use two nodes (slow and fast)
