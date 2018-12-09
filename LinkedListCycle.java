@@ -10,6 +10,9 @@
 public class LinkedListCycle {
 
 	// Definition for a Singly-Linked List Node (Nested Class)
+	// Having a nested class has no meaningful effect on code performance, 
+	// and is simply a tool for keeping code organized. 
+	// https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
 	/*************************************/
 	public static class ListNode {
 		int val;
