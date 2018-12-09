@@ -1,17 +1,26 @@
-
-// Definition for a Singly-Linked List
-/*************************************/
-class ListNode {
-	int val;
-	public ListNode next;
-	ListNode(int x) {
-		val = x;
-		next = null;
-	}
-}
-/*************************************/
+// public static class ListNode {
+// 	int val;
+// 	public ListNode next;
+// 	ListNode(int x) {
+// 		val = x;
+// 		next = null;
+// 	}
+// }
 
 public class LinkedListCycle {
+
+	// Definition for a Singly-Linked List Node (Nested Class)
+	/*************************************/
+	public static class ListNode {
+		int val;
+		public ListNode next;
+		ListNode(int x) {
+			val = x;
+			next = null;
+		}
+	}
+	/*************************************/
+
 	public boolean hasCycle(ListNode head) {
         // edge cases
         if (head == null || head.next == null) {
