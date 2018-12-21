@@ -1,3 +1,5 @@
+/**Merge two sorted linked lists and return it as a new list. 
+  *The new list should be made by splicing together the nodes of the first two lists.*/
 import java.util.Arrays;
 
 class mergeTwoLists {
@@ -13,10 +15,6 @@ class mergeTwoLists {
 
 	public ListNode l1;
 	public ListNode l2;
-	public mergeTwoLists(ListNode list1, ListNode list2) {
-		l1 = list1;
-		l2 = list2;
-	}
 
     public ListNode merge_two_lists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
@@ -41,7 +39,7 @@ class mergeTwoLists {
     }
 
     public static void main(String[] args) {
-    	
+    	// Create two lists as inputs
     	ListNode head1 = new ListNode(1);
     	ListNode l1 = head1;
 		l1.next = new ListNode(2);
@@ -55,7 +53,7 @@ class mergeTwoLists {
 		l2.next = new ListNode(4);
 
 
-		mergeTwoLists solution = new mergeTwoLists(head1,head2);
+		mergeTwoLists solution = new mergeTwoLists();
 		ListNode res = solution.merge_two_lists(head1,head2);
 
 		while (res != null) {
