@@ -1,3 +1,6 @@
+/**You are given two non-empty linked lists representing two non-negative integers. 
+  *The digits are stored in reverse order and each of their nodes contain a single digit. 
+  *Add the two numbers and return it as a linked list.*/
 class AddTwoNumbers {
 
 	public static class ListNode {
@@ -55,7 +58,6 @@ class AddTwoNumbers {
 		l2 = l2.next;
 		l2.next = new ListNode(4);
 
-
 		AddTwoNumbers solution = new AddTwoNumbers();
 		ListNode res = solution.addTwoNumbers(head1,head2);
 
@@ -63,8 +65,10 @@ class AddTwoNumbers {
 			System.out.print(res.val + " ");
 			res = res.next;
 		}
-
     }
-
-
 }
+
+// Time: O(max(m, n)). Assume that m and n represents the length of l1 and l2 respectively, 
+   //the algorithm above iterates at most max(m, n)max(m,n) times.
+
+// Space: O(max(m,n)). The length of the new list is at most max(m,n)+1
